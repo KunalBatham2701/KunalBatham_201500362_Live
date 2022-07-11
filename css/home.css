@@ -24,7 +24,7 @@
 }
 .navbar .logo a img{
     color: #fff;
-    height: 60px;
+    height: 100px;
     padding-left: 10px;
 }
 .navbar .logo a span{
@@ -37,18 +37,19 @@
 .navbar .menu li{
     list-style: none;
     display: inline-block;
+    padding-left:10px;
 }
 .navbar .menu li a{
     text-decoration: none;
     display: block;
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 400;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(227, 227, 17);
+    color: rgb(16, 23, 101);
 }
 .navbar .menu li a:hover,
 .navbar.sticky .menu li a:hover{
@@ -138,5 +139,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding:9px 80px;
 }
