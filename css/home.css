@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a img{
+    color: #fff;
+    height: 60px;
+    padding-left: 10px;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(227, 227, 17);
+}
+.navbar .menu li a:hover,
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/* home section styling */
+.home{
+    display: flex;
+    background: url("../assets/background.jpg") no-repeat center;
+    height: 93vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.banner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  
+.banner-heading {
+    height: 30px;
+    margin-bottom: 2rem;
+    font-size: 50px;
+  }
+.banner-paragraph {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    width: 30%;
+    margin: 0 auto 30px auto;
+    padding: 1rem 0;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+}
+.banner-btn {
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: 0.1rem solid #ae0f0f;
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+.banner-btn:hover{
+    background: #ae0f0f;
+}
+.menu{
+    height: 20px;
+    color: #fff;
+    padding-right: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
